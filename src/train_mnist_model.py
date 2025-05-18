@@ -42,3 +42,6 @@ for i in range(10):
     plt.title(f"預測: {predictions[i].argmax()}, 正確: {y_test[i]}")
     plt.axis('off')
     plt.show()
+
+model.save("mnist_cnn_model.h5")
+print("✅ 模型已儲存為 mnist_cnn_model.h5")
